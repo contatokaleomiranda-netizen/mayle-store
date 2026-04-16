@@ -1,0 +1,2455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- ============================================================
+       MAYLE STORE · Moda Feminina Premium
+       Versão: 2.0 Production
+       Autor: Mayle Store Dev Team
+  ============================================================ -->
+
+  <!-- META BASE -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO ESSENCIAL -->
+  <title>Mayle Store · Moda Feminina Premium | Vestidos, Blusas e Conjuntos</title>
+  <meta name="description" content="Descubra a Mayle Store: moda feminina com leveza e sofisticação. Vestidos midi, conjuntos de alfaiataria, blusas em linho e mais. Frete grátis acima de R$299.">
+  <meta name="keywords" content="moda feminina, vestido midi, blusa linho, conjunto alfaiataria, loja moda, mayle store">
+  <meta name="author" content="Mayle Store">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.maylestore.com.br/">
+
+  <!-- OPEN GRAPH (WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.maylestore.com.br/">
+  <meta property="og:title" content="Mayle Store · Moda Feminina Premium">
+  <meta property="og:description" content="Peças atemporais com toque suave. Descubra sua essência na Mayle Store.">
+  <meta property="og:image" content="https://www.maylestore.com.br/og-image.jpg">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Mayle Store">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mayle Store · Moda Feminina Premium">
+  <meta name="twitter:description" content="Peças atemporais com toque suave. Frete grátis acima de R$299.">
+  <meta name="twitter:image" content="https://www.maylestore.com.br/og-image.jpg">
+
+  <!-- PERFORMANCE: Preconnect para fontes externas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- FONTES PREMIUM -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ÍCONES E LIBS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" media="print" onload="this.media='all'">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/jpeg" href="Kqfib.jpg">
+
+  <!-- SCHEMA.ORG JSON-LD (SEO Estruturado) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "Mayle Store",
+    "description": "Loja de moda feminina com peças atemporais e sofisticadas.",
+    "url": "https://www.maylestore.com.br",
+    "telephone": "+5517991382923",
+    "email": "contato@maylestore.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "BR"
+    },
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "sameAs": [
+      "https://www.instagram.com/maylestore",
+      "https://www.facebook.com/maylestore"
+    ]
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       DESIGN TOKENS & RESET
+    ============================================================ */
+    :root {
+      /* Paleta principal */
+      --clr-bg:           #f9f5f2;
+      --clr-creme:        #fdf9f6;
+      --clr-nude:         #efe3dd;
+      --clr-accent:       #c49c8d;
+      --clr-accent-dark:  #8e6f62;
+      --clr-accent-light: #e8d5ce;
+      --clr-terracota:    #cfb2a5;
+
+      /* Texto */
+      --clr-text:         #1e1614;
+      --clr-text-soft:    #5b4740;
+      --clr-text-muted:   #9b847b;
+
+      /* Feedback */
+      --clr-success:      #6b8c7b;
+      --clr-danger:       #c05050;
+      --clr-star:         #d4a853;
+
+      /* Glassmorphism */
+      --glass-bg:         rgba(253,249,246,0.88);
+      --glass-border:     rgba(196,156,141,0.20);
+
+      /* Sombras */
+      --shadow-sm:        0 2px 12px rgba(140,100,90,0.06);
+      --shadow-md:        0 8px 28px rgba(140,100,90,0.10);
+      --shadow-lg:        0 24px 52px rgba(130,90,80,0.15);
+
+      /* Bordas */
+      --border:           rgba(196,156,141,0.18);
+
+      /* Radii */
+      --r-sm:   12px;
+      --r-md:   20px;
+      --r-lg:   28px;
+      --r-xl:   40px;
+      --r-full: 999px;
+
+      /* Tipografia */
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body:    'Jost', system-ui, sans-serif;
+
+      /* Espaçamento base */
+      --space-xs:  4px;
+      --space-sm:  8px;
+      --space-md:  16px;
+      --space-lg:  24px;
+      --space-xl:  40px;
+      --space-2xl: 64px;
+
+      /* Transições */
+      --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --duration:    0.32s;
+    }
+
+    /* Reset mínimo e eficiente */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--clr-bg);
+      color: var(--clr-text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    /* Textura grain sutil (sem DOM extra) */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.4;
+    }
+
+    /* ============================================================
+       UTILITÁRIOS
+    ============================================================ */
+    .container {
+      max-width: 1440px;
+      margin-inline: auto;
+      padding-inline: clamp(20px, 4vw, 56px);
+    }
+
+    /* Foco acessível: ring terracota para teclado */
+    :focus-visible {
+      outline: 2px solid var(--clr-accent);
+      outline-offset: 3px;
+      border-radius: var(--r-sm);
+    }
+
+    /* Animação base reutilizável */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideInRight {
+      from { opacity: 0; transform: translateX(20px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.93); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    @keyframes bumpScale {
+      0%, 100% { transform: scale(1); }
+      50%       { transform: scale(1.45); }
+    }
+    @keyframes shimmer {
+      0%   { background-position: -600px 0; }
+      100% { background-position: 600px 0; }
+    }
+
+    /* ============================================================
+       SCROLL PROGRESS BAR
+    ============================================================ */
+    [role="progressbar"] {
+      position: fixed;
+      top: 0; left: 0;
+      height: 2px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--clr-accent-light), var(--clr-accent));
+      z-index: 300;
+      transition: width 0.1s linear;
+      pointer-events: none;
+    }
+
+    /* ============================================================
+       TOAST NOTIFICATION
+    ============================================================ */
+    .toast {
+      position: fixed;
+      bottom: var(--space-xl);
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--clr-text);
+      color: var(--clr-creme);
+      padding: 14px 28px;
+      border-radius: var(--r-full);
+      font-size: 0.8rem;
+      letter-spacing: 0.5px;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 2500;
+      opacity: 0;
+      transition: transform 0.4s var(--ease-smooth), opacity 0.4s ease;
+      white-space: nowrap;
+      box-shadow: var(--shadow-lg);
+      pointer-events: none;
+    }
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    .toast__icon { color: var(--clr-accent-light); }
+
+    /* ============================================================
+       ANNOUNCEMENT BAR
+    ============================================================ */
+    .announcement-bar {
+      background: var(--clr-text);
+      color: rgba(255,248,244,0.88);
+      text-align: center;
+      padding: 11px var(--space-md);
+      font-size: clamp(0.62rem, 1.5vw, 0.72rem);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      font-weight: 300;
+      position: relative;
+      z-index: 101;
+    }
+    .announcement-bar__text {
+      display: inline-flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .announcement-bar__text::before,
+    .announcement-bar__text::after {
+      content: '✦';
+      color: var(--clr-accent);
+      font-size: 0.55rem;
+    }
+
+    /* ============================================================
+       HEADER
+    ============================================================ */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      backdrop-filter: blur(24px) saturate(1.6);
+      -webkit-backdrop-filter: blur(24px) saturate(1.6);
+      background: var(--glass-bg);
+      border-bottom: 1px solid var(--glass-border);
+      transition: box-shadow var(--duration) ease;
+    }
+    .site-header.scrolled {
+      box-shadow: 0 6px 32px rgba(140,100,90,0.09);
+    }
+    .site-header__inner {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      height: 76px;
+      gap: var(--space-lg);
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      justify-self: start;
+    }
+    .logo__img {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+      transition: opacity 0.3s ease;
+    }
+    .logo__img:hover { opacity: 0.7; }
+    .logo__fallback {
+      display: none;
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 300;
+      color: var(--clr-text);
+      letter-spacing: 4px;
+      align-items: center;
+    }
+    .logo__fallback em {
+      font-style: italic;
+      color: var(--clr-accent);
+    }
+
+    /* Navegação principal */
+    .site-nav {
+      display: flex;
+      gap: 44px;
+      justify-self: center;
+      list-style: none;
+    }
+    .site-nav__link {
+      text-decoration: none;
+      color: var(--clr-text-soft);
+      font-weight: 300;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      position: relative;
+      padding-bottom: 4px;
+      transition: color var(--duration);
+    }
+    .site-nav__link::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 0; height: 1px;
+      background: var(--clr-accent);
+      transition: width 0.4s ease;
+    }
+    .site-nav__link:hover,
+    .site-nav__link[aria-current="page"] {
+      color: var(--clr-text);
+    }
+    .site-nav__link:hover::after,
+    .site-nav__link[aria-current="page"]::after { width: 100%; }
+
+    /* Ícones do header */
+    .header-actions {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      justify-self: end;
+    }
+    .icon-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: var(--clr-text-soft);
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px; height: 40px;
+      border-radius: var(--r-full);
+      transition: color 0.25s, background 0.25s;
+    }
+    .icon-btn:hover {
+      color: var(--clr-text);
+      background: var(--clr-accent-light);
+    }
+    .cart-btn { position: relative; }
+    .cart-badge {
+      position: absolute;
+      top: -3px; right: -3px;
+      background: var(--clr-text);
+      color: var(--clr-creme);
+      font-size: 0.6rem;
+      font-weight: 600;
+      width: 18px; height: 18px;
+      border-radius: var(--r-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--clr-bg);
+      pointer-events: none;
+      transition: transform 0.28s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .cart-badge.bump {
+      animation: bumpScale 0.3s ease;
+    }
+
+    /* ============================================================
+       HERO
+    ============================================================ */
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 80px;
+      padding: 60px 0 40px;
+      text-align: left;
+    }
+    .hero__content {
+      flex: 1;
+    }
+    .hero__eyebrow {
+      color: var(--clr-accent-dark);
+      letter-spacing: 4px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: inline-block;
+      padding: 6px 18px;
+      background: rgba(196, 156, 141, 0.12);
+      border-radius: 30px;
+    }
+    .hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(3.2rem, 7vw, 5rem);
+      font-weight: 300;
+      color: var(--clr-text);
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+    .hero__title em {
+      color: var(--clr-accent-dark);
+      font-style: italic;
+    }
+    .hero__subtitle {
+      color: var(--clr-text-soft);
+      max-width: 450px;
+      margin-bottom: 36px;
+      font-size: 1.1rem;
+    }
+    .hero__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--clr-text);
+      color: var(--clr-creme);
+      padding: 14px 34px;
+      border-radius: 40px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+      box-shadow: 0 8px 20px rgba(30, 22, 20, 0.1);
+    }
+    .hero__cta:hover {
+      background: var(--clr-accent-dark);
+      transform: translateY(-3px);
+    }
+    .hero__visual {
+      flex: 1;
+      border-radius: 48px;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      position: relative;
+    }
+    .hero__visual img {
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+    }
+    .hero__badge {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(6px);
+      padding: 8px 22px;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      color: var(--clr-text);
+      border: 1px solid rgba(196, 156, 141, 0.25);
+      box-shadow: var(--shadow-sm);
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero__subtitle {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    /* ============================================================
+       SEÇÕES INSTITUCIONAIS
+    ============================================================ */
+    .info-section {
+      background: linear-gradient(135deg, rgba(255,252,249,0.92) 0%, rgba(239,227,221,0.55) 100%);
+      border-radius: var(--r-xl);
+      padding: clamp(36px, 5vw, 64px) clamp(28px, 5vw, 68px);
+      margin-block: clamp(24px, 3vw, 40px);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+      transition: box-shadow var(--duration), transform var(--duration);
+    }
+    .info-section::after {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 260px; height: 260px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(196,156,141,0.09) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .info-section:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 3.5vw, 2.5rem);
+      font-weight: 400;
+      color: var(--clr-text);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      letter-spacing: -0.3px;
+    }
+    .section-title__icon {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: var(--clr-accent-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      aria-hidden: true;
+    }
+    .section-title__icon i { color: var(--clr-accent-dark); font-size: 1.05rem; }
+
+    .about__text {
+      color: var(--clr-text-soft);
+      font-size: clamp(1rem, 2vw, 1.07rem);
+      line-height: 1.9;
+      max-width: 860px;
+      font-weight: 300;
+    }
+
+    /* ============================================================
+       FUNDADORAS (MODIFICADO: duas fotos individuais)
+    ============================================================ */
+    .founders-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      align-items: start;
+    }
+    .founder-profile {
+      text-align: center;
+    }
+    .founder-photo-large {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid var(--clr-accent-light);
+      box-shadow: var(--shadow-md);
+      margin: 0 auto 20px;
+    }
+    .founder-photo-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .founder-name-large {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      margin-bottom: 6px;
+      color: var(--clr-text);
+    }
+    .founder-role-large {
+      color: var(--clr-accent-dark);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.75rem;
+      margin-bottom: 12px;
+    }
+    .founder-quote {
+      color: var(--clr-text-soft);
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+    .founders-story {
+      grid-column: span 2;
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid var(--border);
+    }
+    .founders-story p {
+      color: var(--clr-text-soft);
+      font-size: 1.05rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    @media (max-width: 600px) {
+      .founders-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      .founders-story {
+        grid-column: span 1;
+      }
+    }
+
+    /* ============================================================
+       FILTROS (CHIPS)
+    ============================================================ */
+    .filters {
+      margin-block: clamp(36px, 6vw, 60px) 16px;
+      text-align: center;
+    }
+    .filters__label {
+      display: block;
+      font-size: 0.68rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--clr-text-muted);
+      margin-bottom: 18px;
+      font-weight: 400;
+    }
+    .filters__chips {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    .chip {
+      background: white;
+      padding: 11px 26px;
+      border-radius: var(--r-full);
+      font-size: 0.7rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--clr-text-muted);
+      box-shadow: var(--shadow-sm);
+      cursor: pointer;
+      border: 1.5px solid var(--border);
+      transition: color 0.28s, border-color 0.28s, transform 0.28s, box-shadow 0.28s;
+      position: relative;
+      overflow: hidden;
+      role: button;
+      user-select: none;
+    }
+    .chip__label { position: relative; z-index: 1; pointer-events: none; }
+    .chip::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--clr-accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.32s ease;
+      border-radius: inherit;
+    }
+    .chip:hover::before,
+    .chip[aria-selected="true"]::before { transform: scaleX(1); }
+    .chip:hover,
+    .chip[aria-selected="true"] {
+      color: white;
+      border-color: var(--clr-accent);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(196,156,141,0.28);
+    }
+
+    /* ============================================================
+       CABEÇALHO DA SEÇÃO DE PRODUTOS
+    ============================================================ */
+    .products-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      margin-block: 44px 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .products-header__title {
+      font-family: var(--font-display);
+      font-size: clamp(1.7rem, 3vw, 2.1rem);
+      font-weight: 400;
+      color: var(--clr-text);
+    }
+    .products-header__count {
+      font-size: 0.72rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--clr-text-muted);
+      font-weight: 300;
+    }
+
+    /* ============================================================
+       GRID DE PRODUTOS — auto-fit fluido
+    ============================================================ */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+      gap: clamp(16px, 2.5vw, 28px);
+      padding-bottom: clamp(56px, 8vw, 96px);
+    }
+
+    /* ============================================================
+       CARD DE PRODUTO
+    ============================================================ */
+    .product-card {
+      background: white;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      border: 1px solid rgba(227,210,200,0.45);
+      box-shadow: var(--shadow-sm);
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.38s var(--ease-smooth),
+                  box-shadow 0.38s var(--ease-smooth),
+                  border-color 0.38s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--clr-accent-light);
+    }
+    .product-card:focus-within {
+      outline: 2px solid var(--clr-accent);
+      outline-offset: 2px;
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 14px; left: 14px;
+      padding: 5px 13px;
+      border-radius: var(--r-full);
+      font-size: 0.58rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      z-index: 5;
+      pointer-events: none;
+    }
+    .product-badge--dark  { background: var(--clr-text); color: var(--clr-creme); }
+    .product-badge--hot   { background: #c0586e; color: white; }
+    .product-badge--stock { background: #d4823a; color: white; }
+
+    .product-wishlist {
+      position: absolute;
+      top: 14px; right: 14px;
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 5;
+      transition: background 0.25s, box-shadow 0.25s, opacity 0.25s, transform 0.25s;
+      opacity: 0;
+      transform: scale(0.82);
+    }
+    .product-wishlist i {
+      font-size: 0.88rem;
+      color: var(--clr-text-muted);
+      transition: color 0.25s, transform 0.3s;
+      pointer-events: none;
+    }
+    .product-card:hover .product-wishlist {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .product-wishlist:hover i { color: #c0586e; transform: scale(1.15); }
+    .product-wishlist.active i { color: #c0586e; }
+    .product-wishlist.active { opacity: 1; transform: scale(1); }
+
+    .product-image {
+      aspect-ratio: 3 / 4;
+      overflow: hidden;
+      background: var(--clr-nude);
+      position: relative;
+    }
+    .product-image img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      loading: lazy;
+      decoding: async;
+      transition: transform 0.75s var(--ease-smooth);
+    }
+    .product-card:hover .product-image img { transform: scale(1.07); }
+
+    .product-rating {
+      position: absolute;
+      bottom: 14px; left: 14px;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(8px);
+      padding: 5px 11px;
+      border-radius: var(--r-full);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.68rem;
+      font-weight: 500;
+      color: var(--clr-text);
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.3s, transform 0.3s;
+      pointer-events: none;
+    }
+    .product-rating__stars { color: var(--clr-star); font-size: 0.7rem; }
+    .product-card:hover .product-rating {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .product-quick-add {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 18px;
+      background: linear-gradient(to top, rgba(253,249,246,0.97) 0%, transparent 100%);
+      transform: translateY(100%);
+      transition: transform 0.38s var(--ease-smooth);
+      display: flex;
+      justify-content: center;
+    }
+    .product-card:hover .product-quick-add { transform: translateY(0); }
+
+    .btn-quick-add {
+      background: var(--clr-text);
+      color: var(--clr-creme);
+      border: none;
+      padding: 12px 0;
+      border-radius: var(--r-full);
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.25s, transform 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: var(--font-body);
+    }
+    .btn-quick-add:hover { background: var(--clr-accent-dark); }
+    .btn-quick-add:active { transform: scale(0.98); }
+
+    .product-info {
+      padding: clamp(14px, 2vw, 20px) clamp(14px, 2vw, 20px) clamp(18px, 2.5vw, 24px);
+    }
+    .product-cat {
+      font-size: 0.58rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--clr-accent);
+      font-weight: 400;
+      margin-bottom: 6px;
+    }
+    .product-name {
+      font-family: var(--font-display);
+      font-size: clamp(1.25rem, 2.5vw, 1.6rem);
+      font-weight: 400;
+      color: var(--clr-text);
+      margin-bottom: 10px;
+      letter-spacing: -0.2px;
+      line-height: 1.2;
+    }
+
+    .product-price-block { display: flex; flex-direction: column; gap: 3px; }
+    .product-price {
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      font-weight: 600;
+      color: var(--clr-text);
+      letter-spacing: -0.3px;
+    }
+    .product-installments {
+      font-size: 0.72rem;
+      color: var(--clr-text-muted);
+      font-weight: 300;
+    }
+
+    .product-stock {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.62rem;
+      font-weight: 500;
+      color: #c0586e;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 8px;
+    }
+    .product-stock::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #c0586e;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.4; }
+    }
+
+    /* ============================================================
+       CARRINHO LATERAL
+    ============================================================ */
+    .cart-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(20,12,10,0.38);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 1000;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.35s ease, visibility 0.35s;
+    }
+    .cart-overlay.active { visibility: visible; opacity: 1; }
+
+    .cart-panel {
+      position: fixed;
+      top: 0; right: 0;
+      width: min(440px, 100%);
+      height: 100dvh;
+      background: var(--clr-creme);
+      transform: translateX(110%);
+      transition: transform 0.45s var(--ease-smooth);
+      z-index: 1010;
+      display: flex;
+      flex-direction: column;
+      box-shadow: -24px 0 80px rgba(140,100,90,0.13);
+      border-left: 1px solid var(--border);
+    }
+    .cart-overlay.active .cart-panel { transform: translateX(0); }
+
+    .cart-panel__header {
+      padding: 32px var(--space-xl) 18px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .cart-panel__heading {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: -0.3px;
+    }
+    .cart-panel__count {
+      font-size: 0.68rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--clr-text-muted);
+      font-weight: 300;
+      display: block;
+      margin-top: 2px;
+    }
+    .btn-icon-round {
+      background: var(--clr-nude);
+      border: none;
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      color: var(--clr-text-soft);
+      transition: background 0.25s, color 0.25s, transform 0.25s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .btn-icon-round:hover {
+      background: var(--clr-accent-light);
+      color: var(--clr-text);
+      transform: rotate(90deg);
+    }
+
+    .cart-panel__body {
+      flex: 1;
+      overflow-y: auto;
+      padding: var(--space-lg) var(--space-xl);
+      scrollbar-width: thin;
+      scrollbar-color: var(--clr-accent-light) transparent;
+    }
+    .cart-panel__body::-webkit-scrollbar { width: 3px; }
+    .cart-panel__body::-webkit-scrollbar-thumb { background: var(--clr-accent-light); border-radius: 3px; }
+
+    .cart-empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-md);
+      height: 100%;
+      text-align: center;
+      padding: var(--space-xl);
+    }
+    .cart-empty__icon {
+      font-size: 3rem;
+      color: var(--clr-accent-light);
+    }
+    .cart-empty__text { font-size: 0.9rem; font-weight: 300; color: var(--clr-text-muted); }
+
+    .cart-item {
+      display: flex;
+      gap: var(--space-md);
+      padding-block: var(--space-lg);
+      border-bottom: 1px solid var(--border);
+      animation: slideInRight 0.35s ease;
+    }
+    .cart-item:last-child { border-bottom: none; }
+    .cart-item__thumb {
+      width: 80px; height: 105px;
+      border-radius: var(--r-md);
+      overflow: hidden;
+      background: var(--clr-nude);
+      flex-shrink: 0;
+    }
+    .cart-item__thumb img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      decoding: async;
+    }
+    .cart-item__info { flex: 1; min-width: 0; }
+    .cart-item__name {
+      font-size: 0.92rem;
+      font-weight: 400;
+      color: var(--clr-text);
+      margin-bottom: 3px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .cart-item__price {
+      font-size: 0.88rem;
+      color: var(--clr-accent-dark);
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    .cart-item__actions { display: flex; align-items: center; gap: 8px; }
+
+    .qty-control {
+      display: flex;
+      align-items: center;
+      background: var(--clr-nude);
+      border-radius: var(--r-full);
+      padding: 3px;
+    }
+    .btn-qty {
+      background: transparent;
+      border: none;
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      font-size: 1rem;
+      font-weight: 300;
+      cursor: pointer;
+      color: var(--clr-text-soft);
+      transition: background 0.2s, color 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+    .btn-qty:hover { background: white; color: var(--clr-text); }
+    .qty-value {
+      font-size: 0.85rem;
+      font-weight: 500;
+      min-width: 22px;
+      text-align: center;
+      color: var(--clr-text);
+      pointer-events: none;
+    }
+
+    .btn-remove {
+      background: transparent;
+      border: none;
+      color: var(--clr-text-muted);
+      cursor: pointer;
+      font-size: 0.88rem;
+      width: 28px; height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-left: auto;
+      transition: color 0.2s, background 0.2s;
+    }
+    .btn-remove:hover { color: var(--clr-danger); background: #fde8e8; }
+
+    .cart-panel__footer {
+      padding: var(--space-lg) var(--space-xl) clamp(28px, 5vw, 40px);
+      border-top: 1px solid var(--border);
+      background: white;
+      flex-shrink: 0;
+    }
+    .cart-subtotal {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.74rem;
+      color: var(--clr-text-muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .cart-total {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+      letter-spacing: -0.2px;
+    }
+    .cart-secure {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      color: var(--clr-success);
+      font-size: 0.67rem;
+      margin-bottom: 14px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    .btn-checkout {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      padding: 17px;
+      background: var(--clr-text);
+      color: var(--clr-creme);
+      border: none;
+      border-radius: var(--r-full);
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.28s, transform 0.2s, box-shadow 0.28s;
+    }
+    .btn-checkout:hover {
+      background: var(--clr-accent-dark);
+      transform: scale(1.01);
+      box-shadow: 0 14px 32px rgba(142,111,98,0.28);
+    }
+    .btn-checkout:active { transform: scale(0.99); }
+
+    /* ============================================================
+       MODAL DE PRODUTO
+    ============================================================ */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15,10,8,0.58);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      z-index: 1100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s;
+      padding: clamp(0px, 3vw, 24px);
+    }
+    .modal-overlay.active { opacity: 1; visibility: visible; }
+
+    .modal {
+      background: var(--clr-creme);
+      max-width: 1120px;
+      width: 100%;
+      max-height: 90dvh;
+      border-radius: var(--r-xl);
+      box-shadow: 0 60px 120px rgba(0,0,0,0.22);
+      overflow-y: auto;
+      position: relative;
+      border: 1px solid rgba(196,156,141,0.25);
+      scrollbar-width: none;
+      animation: scaleIn 0.45s var(--ease-smooth);
+    }
+    .modal::-webkit-scrollbar { display: none; }
+
+    .modal__close {
+      position: absolute;
+      top: 22px; right: 22px;
+      background: white;
+      border: 1px solid var(--border);
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      cursor: pointer;
+      color: var(--clr-text-soft);
+      transition: background 0.25s, transform 0.25s;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      box-shadow: var(--shadow-sm);
+    }
+    .modal__close:hover {
+      background: var(--clr-nude);
+      color: var(--clr-text);
+      transform: rotate(90deg);
+    }
+
+    .modal__body {
+      display: flex;
+      min-height: 560px;
+    }
+
+    .modal__gallery {
+      flex: 1.2;
+      min-width: 0;
+      border-radius: var(--r-xl) 0 0 var(--r-xl);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .swiper { width: 100%; height: 100%; min-height: 560px; }
+    .swiper-slide { height: auto; }
+    .swiper-slide img {
+      width: 100%; height: 100%;
+      min-height: 560px;
+      object-fit: cover;
+      display: block;
+      decoding: async;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: white !important;
+      background: rgba(255,255,255,0.15) !important;
+      backdrop-filter: blur(8px);
+      width: 44px !important; height: 44px !important;
+      border-radius: 50% !important;
+      border: 1px solid rgba(255,255,255,0.25) !important;
+      transition: background 0.2s !important;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 0.82rem !important;
+      font-weight: 700 !important;
+    }
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover { background: rgba(255,255,255,0.28) !important; }
+    .swiper-pagination-bullet {
+      background: rgba(255,255,255,0.6) !important;
+      width: 6px !important; height: 6px !important;
+      opacity: 1 !important;
+    }
+    .swiper-pagination-bullet-active {
+      background: white !important;
+      width: 20px !important;
+      border-radius: 3px !important;
+    }
+
+    .modal__info {
+      flex: 1;
+      padding: clamp(28px, 4vw, 52px) clamp(24px, 4vw, 44px);
+      display: flex;
+      flex-direction: column;
+    }
+    .modal__category {
+      font-size: 0.65rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--clr-accent);
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    .modal__title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 2.9rem);
+      font-weight: 300;
+      color: var(--clr-text);
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+      margin-bottom: 18px;
+    }
+
+    .modal__price-block {
+      padding-block: 18px;
+      border-block: 1px solid var(--border);
+      margin-bottom: 24px;
+    }
+    .modal__price {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.3rem);
+      font-weight: 400;
+      color: var(--clr-text);
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+    .modal__installments {
+      color: var(--clr-text-muted);
+      margin-top: 7px;
+      font-size: 0.85rem;
+      font-weight: 300;
+    }
+
+    .modal__rating {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .rating-stars { color: var(--clr-star); font-size: 0.9rem; letter-spacing: 1px; }
+    .rating-count { font-size: 0.8rem; color: var(--clr-text-muted); font-weight: 300; }
+    .rating-sold  { font-size: 0.78rem; color: var(--clr-success); font-weight: 400; }
+
+    .modal__badges {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+    }
+    .guarantee-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 13px;
+      background: var(--clr-nude);
+      border-radius: var(--r-full);
+      font-size: 0.67rem;
+      color: var(--clr-text-soft);
+      font-weight: 400;
+    }
+    .guarantee-badge i { color: var(--clr-accent); font-size: 0.72rem; }
+
+    .modal__description {
+      color: var(--clr-text-soft);
+      font-size: 0.95rem;
+      line-height: 1.85;
+      font-weight: 300;
+      flex: 1;
+      margin-bottom: 20px;
+    }
+
+    .modal__urgency {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 16px;
+      background: rgba(192,88,110,0.06);
+      border: 1px solid rgba(192,88,110,0.2);
+      border-radius: var(--r-sm);
+      font-size: 0.78rem;
+      color: #c0586e;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    .modal__urgency i { font-size: 0.9rem; }
+
+    .btn-add-cart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      width: 100%;
+      padding: 18px;
+      background: var(--clr-text);
+      color: var(--clr-creme);
+      border: none;
+      border-radius: var(--r-full);
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.28s, transform 0.2s, box-shadow 0.28s;
+      margin-top: auto;
+    }
+    .btn-add-cart:hover {
+      background: var(--clr-accent-dark);
+      transform: scale(1.01);
+      box-shadow: 0 16px 40px rgba(142,111,98,0.3);
+    }
+    .btn-add-cart:active { transform: scale(0.99); }
+    .btn-add-cart.success { background: var(--clr-success); }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    .site-footer {
+      background: linear-gradient(160deg, var(--clr-text) 0%, #2e1f1a 100%);
+      margin-top: clamp(56px, 8vw, 96px);
+      border-radius: 48px 48px 0 0;
+      padding: clamp(48px, 6vw, 80px) 0 clamp(32px, 4vw, 44px);
+      color: rgba(255,248,244,0.65);
+      position: relative;
+      overflow: hidden;
+    }
+    .site-footer::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 420px; height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(196,156,141,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: clamp(28px, 4vw, 56px);
+      margin-bottom: clamp(36px, 5vw, 56px);
+    }
+    .footer-col__heading {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 24px;
+      color: rgba(255,248,244,0.92);
+    }
+    .footer-col p,
+    .footer-col a {
+      color: rgba(255,248,244,0.55);
+      text-decoration: none;
+      font-size: 0.88rem;
+      line-height: 2.2;
+      transition: color 0.2s;
+      font-weight: 300;
+      display: block;
+    }
+    .footer-col a:hover { color: rgba(255,248,244,0.92); }
+
+    .footer-brand__logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .footer-brand__icon {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: rgba(196,156,141,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(196,156,141,0.25);
+    }
+    .footer-brand__icon i { color: var(--clr-accent); font-size: 1.05rem; }
+    .footer-brand__name {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: rgba(255,248,244,0.92);
+      letter-spacing: 1px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 10px;
+      margin-top: 24px;
+      list-style: none;
+    }
+    .social-links a {
+      background: rgba(255,255,255,0.06);
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,248,244,0.65) !important;
+      font-size: 1rem;
+      transition: background 0.25s, color 0.25s, transform 0.25s, box-shadow 0.25s !important;
+      border: 1px solid rgba(255,255,255,0.1);
+      line-height: 1;
+    }
+    .social-links a:hover {
+      background: var(--clr-accent) !important;
+      color: white !important;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(196,156,141,0.3);
+    }
+
+    .payment-methods {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+    .payment-methods i {
+      font-size: 2rem;
+      color: rgba(255,248,244,0.5);
+      transition: color 0.2s;
+    }
+    .payment-methods i:hover { color: rgba(255,248,244,0.9); }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+      color: rgba(255,248,244,0.55);
+      margin-bottom: 4px;
+      font-size: 0.88rem;
+      font-weight: 300;
+    }
+    .contact-item i {
+      color: var(--clr-accent);
+      font-size: 0.82rem;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .footer-divider {
+      height: 1px;
+      background: rgba(255,255,255,0.08);
+      margin-bottom: 28px;
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      font-size: 0.78rem;
+      color: rgba(255,248,244,0.35);
+      font-weight: 300;
+    }
+    .whatsapp-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 22px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--r-full);
+      color: rgba(255,248,244,0.82);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      transition: background 0.3s, border-color 0.3s, color 0.3s, transform 0.3s;
+    }
+    .whatsapp-cta i { color: #5dc86b; font-size: 1.1rem; }
+    .whatsapp-cta:hover {
+      background: rgba(93,200,107,0.12);
+      border-color: rgba(93,200,107,0.3);
+      color: white;
+      transform: scale(1.02);
+    }
+
+    /* ============================================================
+       BOTÃO FLUTUANTE WHATSAPP
+    ============================================================ */
+    .fab-whatsapp {
+      position: fixed;
+      bottom: clamp(20px, 4vw, 32px);
+      right: clamp(20px, 4vw, 32px);
+      width: 56px; height: 56px;
+      border-radius: 50%;
+      background: #25D366;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      box-shadow: 0 8px 28px rgba(37,211,102,0.42);
+      z-index: 900;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .fab-whatsapp:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 36px rgba(37,211,102,0.52);
+    }
+
+    /* ============================================================
+       RESPONSIVIDADE
+    ============================================================ */
+    @media (max-width: 900px) {
+      .modal__body { flex-direction: column; }
+      .modal__gallery {
+        border-radius: var(--r-xl) var(--r-xl) 0 0;
+        flex: none;
+      }
+      .swiper, .swiper-slide img { min-height: 340px; }
+      .modal-overlay {
+        padding: 0;
+        align-items: flex-end;
+      }
+      .modal {
+        border-radius: var(--r-xl) var(--r-xl) 0 0;
+        max-height: 95dvh;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .site-header__inner {
+        grid-template-columns: auto 1fr auto;
+        height: 64px;
+        gap: var(--space-sm);
+      }
+      .site-nav { display: none; }
+      .info-section { border-radius: var(--r-lg); }
+      .site-footer { border-radius: 28px 28px 0 0; }
+      .footer-bottom { justify-content: center; text-align: center; }
+      .cart-panel__header,
+      .cart-panel__body,
+      .cart-panel__footer { padding-inline: var(--space-lg); }
+    }
+
+    @media (max-width: 480px) {
+      .product-quick-add { display: none; }
+      .modal__badges { gap: 6px; }
+      .guarantee-badge { font-size: 0.6rem; padding: 6px 10px; }
+    }
+
+    .skeleton {
+      background: linear-gradient(90deg, #f0e8e4 25%, #e8ddd9 50%, #f0e8e4 75%);
+      background-size: 600px 100%;
+      animation: shimmer 1.5s infinite;
+      border-radius: var(--r-md);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Barra de progresso de scroll -->
+  <div
+    id="scrollProgress"
+    role="progressbar"
+    aria-label="Progresso de leitura da página"
+    aria-valuenow="0"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  ></div>
+
+  <!-- Toast de notificação acessível -->
+  <div
+    id="toast"
+    class="toast"
+    role="status"
+    aria-live="polite"
+    aria-atomic="true"
+  >
+    <i class="fas fa-check-circle toast__icon" aria-hidden="true"></i>
+    <span id="toastMsg"></span>
+  </div>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a
+    href="https://wa.me/5517991382923?text=Ol%C3%A1%2C%20Mayle%20Store!"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="fab-whatsapp"
+    aria-label="Falar com a Mayle Store pelo WhatsApp"
+  >
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- ============================================================
+       ANNOUNCEMENT BAR
+  ============================================================ -->
+  <div class="announcement-bar" role="banner" aria-label="Promoção">
+    <span class="announcement-bar__text">
+      Frete grátis em compras acima de R$&nbsp;299 · Parcele em até 6x sem juros
+    </span>
+  </div>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container site-header__inner">
+
+      <!-- Logo -->
+      <a href="/" class="logo" aria-label="Mayle Store — Página inicial">
+        <img
+          src="logo.png"
+          alt="Mayle Store"
+          class="logo__img"
+          width="120"
+          height="40"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        >
+        <span class="logo__fallback" aria-hidden="true">MAYLE<em>·</em>STORE</span>
+      </a>
+
+      <!-- Navegação principal -->
+      <nav aria-label="Navegação principal">
+        <ul class="site-nav" role="list">
+          <li><a href="#" class="site-nav__link">Novidades</a></li>
+          <li><a href="#" class="site-nav__link">Vestidos</a></li>
+          <li><a href="#" class="site-nav__link">Conjuntos</a></li>
+          <li><a href="#" class="site-nav__link">Acessórios</a></li>
+        </ul>
+      </nav>
+
+      <!-- Ações do header -->
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="Minha lista de desejos">
+          <i class="far fa-heart" aria-hidden="true"></i>
+        </button>
+        <button class="icon-btn" aria-label="Minha conta">
+          <i class="far fa-user" aria-hidden="true"></i>
+        </button>
+        <button
+          class="icon-btn cart-btn"
+          id="cartToggleBtn"
+          aria-label="Abrir carrinho de compras"
+          aria-expanded="false"
+          aria-controls="cartPanel"
+        >
+          <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+          <span class="cart-badge" id="cartCount" aria-label="0 itens no carrinho">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ============================================================
+       CONTEÚDO PRINCIPAL
+  ============================================================ -->
+  <main id="main-content">
+    <div class="container">
+
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Coleção Outono 2026</p>
+          <h1 class="hero__title" id="heroTitle">O look do<br><em>momento</em></h1>
+          <p class="hero__subtitle">Vestido longo fluido — a peça que traduz leveza e sofisticação.</p>
+          <button class="hero__cta" onclick="document.getElementById('productsGrid').scrollIntoView({behavior:'smooth'})">
+            <i class="fas fa-arrow-right"></i> Explorar coleção
+          </button>
+        </div>
+        <div class="hero__visual">
+          <img src="rosa lado.jpg" alt="Look do momento" loading="lazy" decoding="async" onerror="this.src='https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600&h=800&fit=crop'">
+          <span class="hero__badge"><i class="fas fa-star" style="color:var(--clr-accent);"></i> Mais vendido</span>
+        </div>
+      </section>
+
+      <!-- SOBRE A LOJA (com Kqfib.jpg) -->
+      <section class="info-section" aria-labelledby="aboutTitle" data-aos="fade-up">
+        <h2 class="section-title" id="aboutTitle">
+          <span class="section-title__icon" aria-hidden="true">
+            <img src="Kqfib.jpg" alt="Mayle Store" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-feather-alt\'></i>';">
+          </span>
+          Sobre a Mayle Store
+        </h2>
+        <p class="about__text">
+          A Mayle Store nasceu do desejo de trazer leveza e sofisticação para o dia a dia
+          da mulher contemporânea. Trabalhamos com tecidos selecionados, modelagens que
+          valorizam o corpo e uma paleta de cores que remete à suavidade da natureza. Cada
+          peça é pensada para transitar entre o mundo real e o imaginário, criando momentos
+          únicos. Seja bem-vinda ao nosso universo de tons pastéis e atemporalidade.
+        </p>
+      </section>
+
+      <!-- FUNDADORAS (com Kqfib.jpg no ícone) -->
+      <section class="info-section" aria-labelledby="foundersTitle" data-aos="fade-up">
+        <h2 class="section-title" id="foundersTitle">
+          <span class="section-title__icon" aria-hidden="true">
+            <img src="Kqfib.jpg" alt="Mayle Store" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-heart\'></i>';">
+          </span>
+          Nossas Fundadoras
+        </h2>
+        <div class="founders-grid">
+          <div class="founder-profile">
+            <div class="founder-photo-large">
+              <img src="Mayara.jpg" alt="Mayara" loading="lazy" decoding="async" onerror="this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop'">
+            </div>
+            <div class="founder-name-large">Mayara</div>
+            <p class="founder-quote">"Design que conta histórias."</p>
+          </div>
+          <div class="founder-profile">
+            <div class="founder-photo-large">
+              <img src="leticia.jpg" alt="Letícia" loading="lazy" decoding="async" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop'">
+            </div>
+            <div class="founder-name-large">Letícia</div>
+            <p class="founder-quote">"Excelência em cada detalhe."</p>
+          </div>
+          <div class="founders-story">
+            <p><strong>Mayara e Letícia</strong> — amigas e apaixonadas por moda, uniram suas expertises para criar a Mayle Store. Mayara, com seu olhar apurado para design, e Letícia, com sua experiência em produção, acreditam que cada peça deve contar uma história de delicadeza e força.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FILTROS DE CATEGORIA -->
+      <section class="filters" aria-labelledby="filtersLabel" data-aos="fade-up">
+        <span class="filters__label" id="filtersLabel">Explorar por categoria</span>
+        <ul
+          class="filters__chips"
+          role="listbox"
+          aria-label="Filtrar produtos por categoria"
+        >
+          <li
+            class="chip"
+            role="option"
+            aria-selected="true"
+            data-filter="todos"
+            tabindex="0"
+          >
+            <span class="chip__label">Todos</span>
+          </li>
+          <li class="chip" role="option" aria-selected="false" data-filter="vestido" tabindex="0">
+            <span class="chip__label">Vestidos</span>
+          </li>
+          <li class="chip" role="option" aria-selected="false" data-filter="blusa" tabindex="0">
+            <span class="chip__label">Blusas</span>
+          </li>
+          <li class="chip" role="option" aria-selected="false" data-filter="alfaiataria" tabindex="0">
+            <span class="chip__label">Alfaiataria</span>
+          </li>
+          <li class="chip" role="option" aria-selected="false" data-filter="tricot" tabindex="0">
+            <span class="chip__label">Tricot</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- GRID DE PRODUTOS -->
+      <section aria-labelledby="productsTitle">
+        <header class="products-header" data-aos="fade-up">
+          <h2 class="products-header__title" id="productsTitle">Nossa Coleção</h2>
+          <span class="products-header__count" id="productsCount" aria-live="polite">6 peças</span>
+        </header>
+        <div
+          id="productsGrid"
+          class="products-grid"
+          role="list"
+          aria-label="Lista de produtos"
+        ></div>
+      </section>
+
+    </div><!-- .container -->
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Marca -->
+        <div class="footer-col">
+          <div class="footer-brand__logo">
+            <div class="footer-brand__icon" aria-hidden="true">
+              <img src="Kqfib.jpg" alt="Mayle Store" style="width: 100%; height: 100%; object-fit: contain;" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fas fa-leaf\'></i>';">
+            </div>
+            <span class="footer-brand__name">Mayle Store</span>
+          </div>
+          <p>Moda feminina com propósito. Peças que celebram a beleza natural e a individualidade de cada mulher.</p>
+          <ul class="social-links" aria-label="Redes sociais">
+            <li><a href="#" aria-label="Instagram da Mayle Store" rel="noopener noreferrer"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="Facebook da Mayle Store" rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="Pinterest da Mayle Store" rel="noopener noreferrer"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="TikTok da Mayle Store" rel="noopener noreferrer"><i class="fab fa-tiktok" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Institucional -->
+        <nav class="footer-col" aria-label="Institucional">
+          <h3 class="footer-col__heading">Institucional</h3>
+          <a href="#">Sobre nós</a>
+          <a href="#">Política de privacidade</a>
+          <a href="#">Trocas e devoluções</a>
+          <a href="#">Termos de uso</a>
+        </nav>
+
+        <!-- Atendimento -->
+        <nav class="footer-col" aria-label="Atendimento">
+          <h3 class="footer-col__heading">Atendimento</h3>
+          <a href="#">FAQ</a>
+          <a href="#">Fale conosco</a>
+          <a href="#">Guia de medidas</a>
+          <a href="#">Envio e prazos</a>
+        </nav>
+
+        <!-- Contato -->
+        <address class="footer-col" style="font-style:normal;">
+          <h3 class="footer-col__heading">Contato</h3>
+          <p class="contact-item">
+            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+            <a href="tel:+5517991382923">(17) 99138-2923</a>
+          </p>
+          <p class="contact-item">
+            <i class="far fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:contato@maylestore.com">contato@maylestore.com</a>
+          </p>
+          <p class="contact-item">
+            <i class="far fa-clock" aria-hidden="true"></i>
+            <span>Seg a Sex, 9h às 18h</span>
+          </p>
+          <div class="payment-methods" aria-label="Formas de pagamento aceitas" style="margin-top:22px;">
+            <i class="fab fa-cc-visa" title="Visa" aria-label="Visa"></i>
+            <i class="fab fa-cc-mastercard" title="Mastercard" aria-label="Mastercard"></i>
+            <i class="fab fa-cc-amex" title="American Express" aria-label="American Express"></i>
+            <i class="fas fa-barcode" title="Boleto Bancário" aria-label="Boleto Bancário"></i>
+          </div>
+        </address>
+
+      </div><!-- .footer-grid -->
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <small>© 2026 Mayle Store — Todos os direitos reservados.</small>
+        <a
+          href="https://wa.me/5517991382923?text=Ol%C3%A1%2C%20Mayle%20Store!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="whatsapp-cta"
+          aria-label="Falar com atendimento pelo WhatsApp"
+        >
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+          Falar pelo WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       CARRINHO LATERAL
+  ============================================================ -->
+  <div
+    class="cart-overlay"
+    id="cartOverlay"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Carrinho de compras"
+    aria-hidden="true"
+  >
+    <aside class="cart-panel" id="cartPanel">
+
+      <header class="cart-panel__header">
+        <div>
+          <h2 class="cart-panel__heading">Seu carrinho</h2>
+          <span class="cart-panel__count" id="cartItemsLabel">0 itens</span>
+        </div>
+        <button
+          class="btn-icon-round"
+          id="closeCartBtn"
+          aria-label="Fechar carrinho"
+        >×</button>
+      </header>
+
+      <div class="cart-panel__body" id="cartItemsContainer"></div>
+
+      <footer class="cart-panel__footer">
+        <div class="cart-subtotal">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">R$ 0,00</span>
+        </div>
+        <div class="cart-total">
+          <span>Total</span>
+          <span id="cartTotal">R$ 0,00</span>
+        </div>
+        <p class="cart-secure">
+          <i class="fas fa-lock" aria-hidden="true"></i>
+          Compra 100% segura e protegida
+        </p>
+        <button class="btn-checkout" id="checkoutWhatsApp" aria-label="Finalizar compra pelo WhatsApp">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+          Finalizar pelo WhatsApp
+        </button>
+      </footer>
+
+    </aside>
+  </div>
+
+  <!-- ============================================================
+       MODAL DE PRODUTO
+  ============================================================ -->
+  <div
+    class="modal-overlay"
+    id="productModal"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Detalhes do produto"
+    aria-hidden="true"
+  >
+    <article class="modal">
+      <button
+        class="modal__close"
+        id="closeModalBtn"
+        aria-label="Fechar detalhes do produto"
+      >×</button>
+
+      <div class="modal__body">
+
+        <!-- Galeria -->
+        <div class="modal__gallery" aria-label="Fotos do produto">
+          <div class="swiper" id="modalSwiper">
+            <div class="swiper-wrapper" id="swiperWrapper"></div>
+            <div class="swiper-pagination"></div>
+            <button class="swiper-button-prev" aria-label="Foto anterior"></button>
+            <button class="swiper-button-next" aria-label="Próxima foto"></button>
+          </div>
+        </div>
+
+        <!-- Informações -->
+        <div class="modal__info">
+          <p class="modal__category" id="modalProductCategory"></p>
+          <h2 class="modal__title" id="modalProductTitle"></h2>
+
+          <!-- Avaliação (prova social) -->
+          <div class="modal__rating" aria-label="Avaliação do produto">
+            <span class="rating-stars" aria-hidden="true">★★★★★</span>
+            <span class="rating-count">4.9</span>
+            <span class="rating-sold" id="modalRatingSold"></span>
+          </div>
+
+          <!-- Preço -->
+          <div class="modal__price-block">
+            <div class="modal__price" id="modalProductPrice"></div>
+            <div class="modal__installments" id="modalInstallments"></div>
+          </div>
+
+          <!-- Urgência -->
+          <div class="modal__urgency" id="modalUrgency" role="alert">
+            <i class="fas fa-fire" aria-hidden="true"></i>
+            <span id="modalUrgencyText"></span>
+          </div>
+
+          <!-- Garantias -->
+          <div class="modal__badges" aria-label="Garantias da compra">
+            <span class="guarantee-badge">
+              <i class="fas fa-truck" aria-hidden="true"></i> Frete grátis
+            </span>
+            <span class="guarantee-badge">
+              <i class="fas fa-undo" aria-hidden="true"></i> Troca fácil
+            </span>
+            <span class="guarantee-badge">
+              <i class="fas fa-shield-alt" aria-hidden="true"></i> Compra segura
+            </span>
+          </div>
+
+          <!-- Descrição -->
+          <p class="modal__description" id="modalProductDesc"></p>
+
+          <!-- CTA principal -->
+          <button
+            class="btn-add-cart"
+            id="addToCartModalBtn"
+            aria-label="Adicionar produto ao carrinho"
+          >
+            <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+            Adicionar ao carrinho
+          </button>
+        </div><!-- .modal__info -->
+
+      </div><!-- .modal__body -->
+    </article>
+  </div>
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+
+  <script>
+  /**
+   * ============================================================
+   * MAYLE STORE · Main Application
+   * Versão: 2.0 · Produção
+   * ============================================================
+   */
+  (function () {
+    'use strict';
+
+    const Config = {
+      whatsapp: '5517991382923',
+      cartKey: 'mayleCart_v2',
+      fallbackImg: 'https://images.unsplash.com/photo-1595341888016-a392ef81b2b1?w=600&h=800&fit=crop',
+      toastDuration: 2800,
+
+      products: [
+        {
+          id: 1,
+          nome: 'Vestido Midi Floral',
+          preco: 229.90,
+          parcelas: '3x R$ 76,63',
+          categoria: 'vestido',
+          descricao: 'Vestido midi em viscose fluida com estampa floral exclusiva. Modelagem que valoriza a silhueta com leveza e movimento.',
+          imagens: [
+            'https://images.unsplash.com/photo-1529139574784-210c5e1eb0e9?w=600&h=800&fit=crop',
+            'https://images.unsplash.com/photo-1612336307429-8a6e4a9b3a3d?w=600&h=800&fit=crop',
+            'https://images.unsplash.com/photo-1581044777550-4cfa60707c03?w=600&h=800&fit=crop',
+          ],
+          badge: { type: 'hot', label: 'Mais vendido' },
+          rating: { score: '4.9', count: '(247 avaliações)', sold: '⚡ 38 vendidos hoje' },
+          urgency: '🔥 Últimas 3 unidades disponíveis',
+        },
+        {
+          id: 2,
+          nome: 'Blusa Linho Clássica',
+          preco: 159.90,
+          parcelas: '2x R$ 79,95',
+          categoria: 'blusa',
+          descricao: 'Blusa em linho com gola padre e mangas bufantes. Caimento impecável e tecido respirável — perfeita para qualquer ocasião.',
+          imagens: ['foto frente.jpg', 'foto costas.jpg'],
+          badge: { type: 'dark', label: 'Novidade' },
+          rating: { score: '4.8', count: '(124 avaliações)', sold: '21 vendidos hoje' },
+          urgency: null,
+        },
+        {
+          id: 3,
+          nome: 'Conjunto Alfaiataria',
+          preco: 389.90,
+          parcelas: '4x R$ 97,47',
+          categoria: 'alfaiataria',
+          descricao: 'Blazer alongado e calça pantalona em crepe leve. Elegância moderna que transita do trabalho ao jantar com facilidade.',
+          imagens: ['foto le.jpg'],
+          badge: { type: 'dark', label: 'Exclusivo' },
+          rating: { score: '5.0', count: '(89 avaliações)', sold: '12 vendidos hoje' },
+          urgency: '⏰ Apenas 5 unidades no estoque',
+        },
+        {
+          id: 4,
+          nome: 'Saia Plissada Midi',
+          preco: 189.90,
+          parcelas: '3x R$ 63,30',
+          categoria: 'saia',
+          descricao: 'Saia plissada acetinada com elástico na cintura. Movimento fluido e brilho sutil que encanta em qualquer luz.',
+          imagens: ['branco.jpg'],
+          badge: null,
+          rating: { score: '4.7', count: '(76 avaliações)', sold: null },
+          urgency: null,
+        },
+        {
+          id: 5,
+          nome: 'Vestido Longo Fluido',
+          preco: 279.90,
+          parcelas: '4x R$ 69,97',
+          categoria: 'vestido',
+          descricao: 'Vestido longo com decote transpassado e estampa abstrata em tons terrosos. Uma peça que conta histórias.',
+          imagens: ['rosa.jpg', 'rosa lado.jpg'],
+          badge: { type: 'stock', label: 'Últimas unidades' },
+          rating: { score: '4.9', count: '(183 avaliações)', sold: '29 vendidos hoje' },
+          urgency: '🔥 Alta demanda — pedidos em processamento',
+        },
+        {
+          id: 6,
+          nome: 'Cardigã Tricot',
+          preco: 219.90,
+          parcelas: '3x R$ 73,30',
+          categoria: 'tricot',
+          descricao: 'Cardigã de tricot macio com botões de madrepérola. Modelagem oversized para dias de conforto sem abrir mão do estilo.',
+          imagens: ['informal.jpg'],
+          badge: { type: 'dark', label: 'Favorito' },
+          rating: { score: '4.8', count: '(156 avaliações)', sold: '17 vendidos hoje' },
+          urgency: null,
+        },
+      ],
+    };
+
+    const DOM = {
+      scrollProgress:    document.getElementById('scrollProgress'),
+      toast:             document.getElementById('toast'),
+      toastMsg:          document.getElementById('toastMsg'),
+      header:            document.getElementById('siteHeader'),
+      cartOverlay:       document.getElementById('cartOverlay'),
+      cartToggleBtn:     document.getElementById('cartToggleBtn'),
+      closeCartBtn:      document.getElementById('closeCartBtn'),
+      cartCount:         document.getElementById('cartCount'),
+      cartItemsLabel:    document.getElementById('cartItemsLabel'),
+      cartItemsContainer:document.getElementById('cartItemsContainer'),
+      cartSubtotal:      document.getElementById('cartSubtotal'),
+      cartTotal:         document.getElementById('cartTotal'),
+      checkoutBtn:       document.getElementById('checkoutWhatsApp'),
+      productsGrid:      document.getElementById('productsGrid'),
+      productsCount:     document.getElementById('productsCount'),
+      productModal:      document.getElementById('productModal'),
+      closeModalBtn:     document.getElementById('closeModalBtn'),
+      swiperWrapper:     document.getElementById('swiperWrapper'),
+      modalCategory:     document.getElementById('modalProductCategory'),
+      modalTitle:        document.getElementById('modalProductTitle'),
+      modalPrice:        document.getElementById('modalProductPrice'),
+      modalInstallments: document.getElementById('modalInstallments'),
+      modalDesc:         document.getElementById('modalProductDesc'),
+      modalRatingSold:   document.getElementById('modalRatingSold'),
+      modalUrgency:      document.getElementById('modalUrgency'),
+      modalUrgencyText:  document.getElementById('modalUrgencyText'),
+      addToCartModalBtn: document.getElementById('addToCartModalBtn'),
+      chips:             document.querySelectorAll('.chip'),
+    };
+
+    const Utils = {
+      currency(value) {
+        return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      },
+      escapeHtml(str) {
+        const map = { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' };
+        return String(str).replace(/[&<>"']/g, m => map[m]);
+      },
+      showToast(message) {
+        DOM.toastMsg.textContent = message;
+        DOM.toast.classList.add('show');
+        clearTimeout(Utils._toastTimer);
+        Utils._toastTimer = setTimeout(() => DOM.toast.classList.remove('show'), Config.toastDuration);
+      },
+      bumpCartBadge() {
+        DOM.cartCount.classList.remove('bump');
+        void DOM.cartCount.offsetWidth;
+        DOM.cartCount.classList.add('bump');
+        setTimeout(() => DOM.cartCount.classList.remove('bump'), 400);
+      },
+    };
+
+    const Cart = {
+      _items: [],
+      init() {
+        try {
+          const saved = localStorage.getItem(Config.cartKey);
+          this._items = saved ? JSON.parse(saved) : [];
+        } catch { this._items = []; }
+        this.render();
+      },
+      _save() {
+        try { localStorage.setItem(Config.cartKey, JSON.stringify(this._items)); } catch(e) {}
+      },
+      add(product) {
+        const existing = this._items.find(i => i.id === product.id);
+        if (existing) existing.quantity += 1;
+        else this._items.push({ id: product.id, nome: product.nome, preco: product.preco, imagem: product.imagens[0], quantity: 1 });
+        this._save();
+        this.render();
+        Utils.bumpCartBadge();
+        Utils.showToast(`"${product.nome}" adicionado ao carrinho`);
+      },
+      updateQty(id, delta) {
+        const item = this._items.find(i => i.id === id);
+        if (!item) return;
+        item.quantity += delta;
+        if (item.quantity <= 0) this.remove(id);
+        else { this._save(); this.render(); }
+      },
+      remove(id) {
+        this._items = this._items.filter(i => i.id !== id);
+        this._save();
+        this.render();
+      },
+      get total() { return this._items.reduce((sum, i) => sum + i.preco * i.quantity, 0); },
+      get count() { return this._items.reduce((sum, i) => sum + i.quantity, 0); },
+      render() {
+        const count = this.count;
+        DOM.cartCount.textContent = count;
+        DOM.cartItemsLabel.textContent = `${count} ${count === 1 ? 'item' : 'itens'}`;
+        const totalFmt = Utils.currency(this.total);
+        DOM.cartTotal.textContent = totalFmt;
+        DOM.cartSubtotal.textContent = totalFmt;
+        const container = DOM.cartItemsContainer;
+        container.innerHTML = '';
+        if (this._items.length === 0) {
+          container.innerHTML = '<div class="cart-empty"><div class="cart-empty__icon"><i class="fas fa-shopping-bag"></i></div><p class="cart-empty__text">Seu carrinho está vazio</p></div>';
+          return;
+        }
+        const fragment = document.createDocumentFragment();
+        this._items.forEach(item => {
+          const article = document.createElement('article');
+          article.className = 'cart-item';
+          article.innerHTML = `
+            <div class="cart-item__thumb"><img src="${item.imagem}" alt="${Utils.escapeHtml(item.nome)}" onerror="this.src='${Config.fallbackImg}'"></div>
+            <div class="cart-item__info">
+              <p class="cart-item__name">${item.nome}</p>
+              <p class="cart-item__price">${Utils.currency(item.preco * item.quantity)}</p>
+              <div class="cart-item__actions">
+                <div class="qty-control">
+                  <button class="btn-qty" data-action="dec">−</button>
+                  <span class="qty-value">${item.quantity}</span>
+                  <button class="btn-qty" data-action="inc">+</button>
+                </div>
+                <button class="btn-remove"><i class="far fa-trash-alt"></i></button>
+              </div>
+            </div>
+          `;
+          article.querySelector('[data-action="dec"]').addEventListener('click', e => { e.stopPropagation(); Cart.updateQty(item.id, -1); });
+          article.querySelector('[data-action="inc"]').addEventListener('click', e => { e.stopPropagation(); Cart.updateQty(item.id, 1); });
+          article.querySelector('.btn-remove').addEventListener('click', e => { e.stopPropagation(); Cart.remove(item.id); });
+          fragment.appendChild(article);
+        });
+        container.appendChild(fragment);
+      },
+      checkoutViaWhatsApp() {
+        if (this._items.length === 0) {
+          Utils.showToast('Adicione produtos ao carrinho primeiro');
+          return;
+        }
+        const msg = this._items.map(i => `• ${i.nome} (${i.quantity}x) — ${Utils.currency(i.preco * i.quantity)}`).join('%0A');
+        const total = `Total: ${Utils.currency(this.total)}`;
+        window.open(`https://wa.me/${Config.whatsapp}?text=${encodeURIComponent(`Olá, Mayle Store! Gostaria de finalizar a compra:\n\n${msg}\n\n${total}`)}`, '_blank');
+      },
+    };
+
+    const Products = {
+      currentFilter: 'todos',
+      render(filter = 'todos') {
+        this.currentFilter = filter;
+        const filtered = filter === 'todos' ? Config.products : Config.products.filter(p => p.categoria === filter);
+        DOM.productsCount.textContent = `${filtered.length} peça${filtered.length !== 1 ? 's' : ''}`;
+        const fragment = document.createDocumentFragment();
+        DOM.productsGrid.innerHTML = '';
+        filtered.forEach((product, idx) => {
+          const article = document.createElement('article');
+          article.className = 'product-card';
+          article.setAttribute('data-id', product.id);
+          article.setAttribute('data-aos', 'fade-up');
+          article.setAttribute('data-aos-delay', String(idx * 55));
+          article.innerHTML = `
+            ${product.badge ? `<div class="product-badge product-badge--${product.badge.type}">${product.badge.label}</div>` : ''}
+            <div class="product-wishlist"><i class="far fa-heart"></i></div>
+            <div class="product-image"><img src="${product.imagens[0]}" alt="${product.nome}" loading="lazy" onerror="this.src='${Config.fallbackImg}'"></div>
+            <div class="product-info">
+              <p class="product-cat">${product.categoria}</p>
+              <h3 class="product-name">${product.nome}</h3>
+              <div class="product-price-block">
+                <div class="product-price">${Utils.currency(product.preco)}</div>
+                <div class="product-installments">${product.parcelas}</div>
+              </div>
+            </div>
+          `;
+          article.addEventListener('click', () => Modal.open(product));
+          fragment.appendChild(article);
+        });
+        DOM.productsGrid.appendChild(fragment);
+        if (typeof AOS !== 'undefined') AOS.refresh();
+      },
+    };
+
+    const Modal = {
+      _swiper: null,
+      _current: null,
+      _lastFocused: null,
+      open(product) {
+        this._current = product;
+        this._lastFocused = document.activeElement;
+        DOM.modalCategory.textContent = product.categoria;
+        DOM.modalTitle.textContent = product.nome;
+        DOM.modalPrice.textContent = Utils.currency(product.preco);
+        DOM.modalInstallments.textContent = `ou ${product.parcelas}`;
+        DOM.modalDesc.textContent = product.descricao;
+        if (product.rating?.sold) {
+          DOM.modalRatingSold.textContent = product.rating.sold;
+          DOM.modalRatingSold.style.display = '';
+        } else DOM.modalRatingSold.style.display = 'none';
+        if (product.urgency) {
+          DOM.modalUrgencyText.textContent = product.urgency;
+          DOM.modalUrgency.hidden = false;
+        } else DOM.modalUrgency.hidden = true;
+        DOM.addToCartModalBtn.innerHTML = '<i class="fas fa-shopping-bag"></i> Adicionar ao carrinho';
+        DOM.addToCartModalBtn.classList.remove('success');
+        DOM.swiperWrapper.innerHTML = product.imagens.map(src => `<div class="swiper-slide"><img src="${src}" alt="${product.nome}" onerror="this.src='${Config.fallbackImg}'"></div>`).join('');
+        if (this._swiper) { this._swiper.destroy(true, true); this._swiper = null; }
+        setTimeout(() => {
+          this._swiper = new Swiper('#modalSwiper', {
+            slidesPerView: 1,
+            loop: product.imagens.length > 1,
+            effect: 'fade',
+            fadeEffect: { crossFade: true },
+            pagination: { el: '.swiper-pagination', clickable: true },
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            keyboard: { enabled: true },
+            grabCursor: true,
+          });
+        }, 60);
+        DOM.productModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        setTimeout(() => DOM.closeModalBtn.focus(), 80);
+      },
+      close() {
+        DOM.productModal.classList.remove('active');
+        document.body.style.overflow = '';
+        if (this._lastFocused) this._lastFocused.focus();
+      },
+    };
+
+    const UI = {
+      init() {
+        window.addEventListener('scroll', () => {
+          const doc = document.documentElement;
+          const progress = (doc.scrollTop / (doc.scrollHeight - doc.clientHeight)) * 100;
+          DOM.scrollProgress.style.width = `${progress}%`;
+          DOM.header.classList.toggle('scrolled', doc.scrollTop > 40);
+        }, { passive: true });
+        if (typeof AOS !== 'undefined') AOS.init({ once: true, offset: 40, duration: 700 });
+        DOM.chips.forEach(chip => chip.addEventListener('click', () => {
+          DOM.chips.forEach(c => c.setAttribute('aria-selected', 'false'));
+          chip.setAttribute('aria-selected', 'true');
+          Products.render(chip.dataset.filter || 'todos');
+        }));
+        DOM.cartToggleBtn.addEventListener('click', () => { DOM.cartOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; });
+        DOM.closeCartBtn.addEventListener('click', () => { DOM.cartOverlay.classList.remove('active'); document.body.style.overflow = ''; });
+        DOM.cartOverlay.addEventListener('click', e => { if (e.target === DOM.cartOverlay) { DOM.cartOverlay.classList.remove('active'); document.body.style.overflow = ''; } });
+        DOM.checkoutBtn.addEventListener('click', () => Cart.checkoutViaWhatsApp());
+        DOM.closeModalBtn.addEventListener('click', () => Modal.close());
+        DOM.productModal.addEventListener('click', e => { if (e.target === DOM.productModal) Modal.close(); });
+        DOM.addToCartModalBtn.addEventListener('click', () => {
+          if (!Modal._current) return;
+          Cart.add(Modal._current);
+          DOM.addToCartModalBtn.innerHTML = '<i class="fas fa-check"></i> Adicionado!';
+          DOM.addToCartModalBtn.classList.add('success');
+          setTimeout(() => Modal.close(), 900);
+        });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') { Modal.close(); DOM.cartOverlay.classList.remove('active'); document.body.style.overflow = ''; } });
+      },
+    };
+
+    function init() {
+      Cart.init();
+      Products.render('todos');
+      UI.init();
+    }
+
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+    else init();
+  })();
+  </script>
+</body>
+</html>
